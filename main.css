@@ -251,9 +251,13 @@ div {
 /*hover to display hidden content*/
 .sizes:hover .dropdownContentSize, .arrow{
 	display: block;
-
+	animation: contentDropIn .5s;
 }
-
+/*
+.sizes:hover .dropdownContentSize {
+	animation: contentDropIn .5s;
+}
+*/
 .bColor:hover .dropdownContentColor, .arrow {
 	display: inline-block;
 }
@@ -292,20 +296,20 @@ div {
 	cursor: pointer;
 }
 
-.color:hover .dropdownContentColor, .arrow {
-	display: block;
-}
-
+	.color:hover .dropdownContentColor, .arrow {
+		display: block;
+		animation: contentDropIn .3s;
+	}
 
 /*animations*/
-@keyframes .dropdownContentSize {
+@keyframes contentDropIn {
   0% {
-    margin-top: -40px;
+    transform: translateY(-40px);
     opacity: 0; }
   30% {
     opacity: .6; }
   100% {
-    margin-top: 0;
+    transform: translate(0);
     opacity: 1; 
   } 
 }
