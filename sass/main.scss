@@ -1,0 +1,343 @@
+/*basics*/
+html,body {
+	font-size: 0px;
+	background-color: black;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+
+/*div formating*/
+#container {
+	height: 541px;
+	width: 100%;
+	display: block;
+	margin: 40px auto;
+	background-color: white;
+	padding-top: 35px;
+	padding-left: 3%;
+
+	div {
+		margin: 0px auto;
+		vertical-align: top;
+		background-color: #fff;
+	}
+
+	.main {
+		width: 28%;
+		display: inline-block;
+		margin: 5px 5px 5% 3%;
+
+		/*top*/
+		.top {
+			border: 3px	 solid #7cb9e3;
+			border-bottom: 2px;
+			padding-top: 40px;
+			padding-left: 11%;
+			position: relative;
+		}
+
+		.flip {	
+			height: 30px;
+			width: 30px;
+			vertical-align: top;	
+			position: absolute;
+			z-index: 2;
+			border-bottom: 3px solid #7cb9e3;
+			border-left: 3px solid #7cb9e3;
+			text-align: center;
+			right: 0;
+			top: 0;
+			color: #7cb9e3;
+			text-align: center;
+
+			button {
+				height: 30px;
+				width: 30px;
+				background-color: white;
+				border: none;
+				border-right: 3px solid #7cb9e3;
+				border-bottom: 3px solid #7cb9e3;
+				cursor: pointer;
+				font-size: 15px;
+				color: #7cb9e3;
+
+				&:hover {
+					background-color: #7cb9e3;
+					color: white;
+				}
+
+				p {
+					margin: 0px auto;
+				}
+			}
+		}
+
+		/*middle*/
+		.icon {
+			width: 20%;
+			height: 50px;
+			border: 3px solid #7cb9e3;
+			border-right: 1.5px solid #7cb9e3;
+			display: inline-block;
+			text-align: center;
+			font-size: 15px;
+			color: #7cb9e3;
+			text-align: center;
+			padding: 0;
+
+			&:hover {
+				background-color: #7cb9e3;
+				color: white;
+			}
+		}
+
+		.last {
+			width: 20%;
+			height: 50px;
+			border: 3px solid #7cb9e3;
+			border-right: 3px solid #7cb9e3;
+			display: inline-block;
+			font-size: 15px;
+			color: #7cb9e3;
+			text-align: center;
+			padding: 0;
+		}
+
+		.sizes {
+
+			.bSize {
+				cursor: pointer;
+				width: 100%;
+				height: 45px;
+				border: none;
+				background-color: white;
+				border-bottom: 1.5px solid #7bc9e3;
+			}
+			.dropdownContentSize {
+				display: none;
+				position: absolute;
+				background-color: white;
+				color: #7cb9e3;
+				z-index: 1;
+			}
+		}s
+
+		.shirtColor{
+			border: 2px solid white;
+			height: 26px;
+			width: 26px;
+			margin-top: 10px;
+
+			.bColor {
+				cursor: pointer;
+				width: 100%;
+				height: 45px;
+				border: none;
+				background-color: white;
+				border-bottom: 1.5px solid #7bc9e3;
+				padding: 2px;
+				
+				&:hover {
+					background-color: #7cb9e3;
+					color: white;
+				}
+			}
+		}
+
+		#left{
+			background-color: #81bce6;
+		}
+
+		#middle{
+			background-color: #d482aa;
+		}
+
+		#right{
+			background-color: #d9ad7a;
+		}
+
+		/*bottom*/
+		.bottom {
+
+			p {
+				width: 80%;
+				display: inline-block;
+				text-align: left;
+				font-size: 30px;
+				color: #7cb9e3;
+			}
+		
+
+			h3 {
+				width: 20%;
+				display: inline-block;
+				text-align: right;
+				font-size: 30px;
+				color: #7cb9e3;
+			}
+		}
+	}
+
+	img {
+		max-width: 85%;
+		max-height: 100%;
+	}
+}
+
+
+/*dropdown content (hidden by default)*/
+
+
+.dropdownContentColor {
+	display: none;
+	position: absolute;
+	background-color: white;
+	z-index: 1;
+	border: 3px solid #7cb9e3;
+}
+
+.arrow {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: none;
+	transform: rotate(45deg);
+	background-color: white;
+	border: 3px solid #7cb9e3;
+	border-top: none;
+	border-left: none;
+	z-index: 2;
+	margin-left: 40px;
+	margin-top: -8px;
+}
+
+.arrowColor{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	display: none;
+	transform: rotate(45deg);
+	background-color: white;
+	border: 3px solid #7cb9e3;
+	border-top: none;
+	border-left: none;
+	z-index: 2;
+	margin-left: -40px;
+	margin-top: 27px;
+}
+
+.colorSelect {
+	width: 25px;
+	height: 25px;
+	display: inline-block;
+	z-index: 3;
+	margin: 2px;
+}
+
+#blue{
+	background-color: #81bce6;
+	margin-bottom: 8px;
+}
+
+#pink{
+	background-color: #d482aa;
+	margin-top: 8px;
+}
+
+#orange{
+	background-color: #d9ad7a;
+	margin-top: 8px;
+}
+
+#green{
+	background-color: #94BE9A;
+	margin-bottom: 8px;
+}
+
+/*formatting <div> used for content*/
+.dropdownContentSize div {
+	color: #7cb9e3;
+	display: block;
+}
+
+.dropdownContentColor div {
+	color: #7cb9e3;
+	display: inline-block;
+}
+
+/*hover to display hidden content*/
+.sizes:hover .dropdownContentSize{
+	display: block;
+	animation: contentDropIn .5s;
+}
+/*
+.sizes:hover .dropdownContentSize {
+	animation: contentDropIn .5s;
+}
+*/
+.bColor:hover .dropdownContentColor{
+	display: inline-block;
+}
+
+.bColor {
+	position: relative;
+}
+
+.sizes {
+	position: relative;
+}
+
+.dropdownContentSize {
+	width: 150%;
+	background-color: white;
+	border: 3px solid #7cb9e3;
+	position: absolute;
+	margin-top: -195px;
+	margin-left: -15px;
+}
+
+.dropdownContentColor  {
+	width: 6%;
+	background-color: white;
+	border: 3px solid #7cb9e3;
+	position: absolute;
+	margin-top: -121px;
+	margin-left: -6px;
+}
+
+.dropdownContentSize p:hover {
+	background-color: #7cb9e3;
+	color: white;
+	font-size: 20;
+	padding-top: 10;
+	cursor: pointer;
+}
+
+.color:hover .dropdownContentColor {
+	display: block;
+	animation: contentDropIn .3s;
+}
+
+/*animations*/
+@keyframes contentDropIn {
+  0% {
+    transform: translateY(-40px);
+    opacity: 0; }
+  30% {
+    opacity: .6; }
+  100% {
+    transform: translate(0);
+    opacity: 1; 
+  } 
+}
+
+/*stack divs below when screen size is below 990px*/
+@media screen and (max-width: 990px) {
+	.main {
+		width: 75%;
+		display: block;
+	}
+}

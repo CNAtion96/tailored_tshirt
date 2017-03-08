@@ -1,11 +1,24 @@
 /*basics*/
 html,body {
 	font-size: 0px;
-	background-color: black;
+	background-color: #fff;
 }
 
 * {
 	box-sizing: border-box;
+}
+
+#subtotal {
+	text-align: center;
+	padding-left: 0;
+}
+
+#subtotal h2 {
+	font-size: 35px;
+	color: black;
+	padding-top: 0px;
+	display:  inline-block;
+	width: 35%;
 }
 
 img {
@@ -33,7 +46,8 @@ div {
 .main {
 	width: 28%;
 	display: inline-block;
-	margin: 5px 5px 5% 3%;
+	margin: 5px 5px 0px 3%;
+	padding-bottom: 5px;
 }
 
 /*top*/
@@ -145,8 +159,6 @@ div {
 	color: white;
 }
 
-/*dropdown menu*/
-
 /* hover butons*/
 .bSize, .bColor{
 	cursor: pointer;
@@ -232,7 +244,7 @@ div {
 }
 
 #green{
-	background-color: green;
+	background-color: #94BE9A;
 	margin-bottom: 8px;
 }
 
@@ -248,7 +260,7 @@ div {
 }
 
 /*hover to display hidden content*/
-.sizes:hover .dropdownContentSize, .arrow{
+.sizes:hover .dropdownContentSize{
 	display: block;
 	animation: contentDropIn .5s;
 }
@@ -257,7 +269,7 @@ div {
 	animation: contentDropIn .5s;
 }
 */
-.bColor:hover .dropdownContentColor, .arrow {
+.bColor:hover .dropdownContentColor{
 	display: inline-block;
 }
 
@@ -295,10 +307,10 @@ div {
 	cursor: pointer;
 }
 
-	.color:hover .dropdownContentColor, .arrow {
-		display: block;
-		animation: contentDropIn .3s;
-	}
+.color:hover .dropdownContentColor {
+	display: block;
+	animation: contentDropIn .3s;
+}
 
 /*animations*/
 @keyframes contentDropIn {
