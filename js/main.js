@@ -5,10 +5,6 @@ var natureLover = document.getElementById("shoppingCartNature");
 
 var forrestWalk = document.getElementById("shoppingCartForrest");
 
-var subtotalBox = document.getElementById("numSubtotal");
-
-var totalBox = document.getElementById("numTotal")
-
 //subtotal and tax
 var subtotal = 0;
 

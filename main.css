@@ -117,6 +117,16 @@ div {
 	padding: 0;
 }
 
+.shoppingCart {
+	color: #7cb9e3;
+	font-size: 15px;
+	width: 100%;
+	height: 100%;
+	border: none;
+	background-color: white;
+
+}
+
 .shirtColor{
 	border: 2px solid white;
 	height: 26px;
